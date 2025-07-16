@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resonance Wheel Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Resonance Wheel Prototype</h1>
+
+  <div id="wheel-container">
+    <!-- Placeholder circle for demo -->
+    <svg viewBox="0 0 200 200" class="wheel">
+      <circle cx="100" cy="100" r="90" fill="#222" stroke="#555" stroke-width="2"/>
+      <!-- Matter-Bind slice (39.15 Hz) highlighted in blue -->
+      <path d="M100,10 A90,90 0 0,1 181,100 L100,100 Z" fill="#246eff"/>
+      <!-- Other slices would go here -->
+    </svg>
+  </div>
+
+  <label>
+    <input type="checkbox" id="matter-toggle" /> Enable Matter-Bind (39.15 Hz)
+  </label>
+  <div>
+    Amplitude:
+    <input type="range" id="matter-slider" min="0" max="100" value="50" />
+    <span id="matter-value">50%</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
