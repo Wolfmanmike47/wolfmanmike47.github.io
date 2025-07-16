@@ -1,0 +1,33 @@
+body {
+  background: #111;
+  color: #eee;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+#wheel-container {
+  width: 200px;
+  margin: 0 auto 1.5rem;
+}
+
+.wheel {
+  width: 100%;
+  height: auto;
+}
+
+label,
+div {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+input[type="range"] {
+  vertical-align: middle;
+  width: 200px;
+}
